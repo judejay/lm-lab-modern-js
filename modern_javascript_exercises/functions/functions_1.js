@@ -7,9 +7,15 @@
 
 const people = ["Harry", "Hermione", "Ron"];
 
+
 function logPerson(person) {
   console.log("The person is " + person);
 }
+
+
+
+
+
 
 people.forEach(logPerson);
 
@@ -17,14 +23,23 @@ people.forEach(logPerson);
 // Store the logPerson() function in a variable called performLogPerson
 
 // Your code here
-
+const performLogPerson = function logPerson(person) {
+  console.log("The person is " + person);
+}
 // Arrow Functions in a Variable
 // Write a version of logPerson() as an Arrow Function and store it in a variable called arrowVersionOfLogPerson
 
 // Your code here
-
+const logPerson = person =>{
+  console.log("The person is " + person);
+}
 // Anonymous Arrow Functions
 // Replace logPerson below with an Anonymous Arrow Function that does the same thing!
+
+
+person =>{
+  console.log("The person is " + person);
+}
 
 people.forEach(logPerson);
 
